@@ -3,6 +3,6 @@ class HomesController < ActionController::Base
 	end
 
 	def download_resume
-		send_file '/assets/pdfs/WebDeveloperResume.pdf', :type=>"application/pdf", :x_sendfile=>true
+   send_file "app/assets/pdfs/WebDeveloperResume.pdf"
 	end
 end
