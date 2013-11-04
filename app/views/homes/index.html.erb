@@ -1,0 +1,84 @@
+
+<style>
+	p, h1
+	{
+		background-color:#442427;
+		color:white;
+	}
+
+  p a:active, p a:hover, p a:visited
+  {
+    color:white;
+  }
+/*	body{margin:0px;}*/
+	.container
+	{
+		width:80%;
+		text-align: center;
+		margin:auto;
+	}
+
+  ul
+  {
+    style: inline;
+  }
+</style>
+
+<div class="container">
+	<h1>Joe Noonan</h1>
+	<div>
+
+	</div>
+
+
+
+  <meta charset="utf-8" />
+  <title>Joe Noonan 101</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  });
+  </script>
+</head>
+<body>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">About Me</a></li>
+    <li><a href="#tabs-2">Projects</a></li>
+    <li><a href="#tabs-3">Resume</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed macidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>
+      <%= link_to "Joe Noonan Github", "http://www.github.com/joe11000"%>
+      <%= link_to "Download Resume", "/download_resume" %>
+    </p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+<ul>
+	<li > <%= image_tag "facebook.png"         %></li>
+	<li ><%= image_tag "google.png" %>   </li>
+	<li ><%= image_tag "twitter.png" %>   </li>
+	<li ><%= image_tag "email.png" %> </li>
+</ul>
+
+</div>
