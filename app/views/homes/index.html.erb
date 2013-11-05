@@ -1,31 +1,46 @@
 
 <style>
-	p, h1
+	p, pre
 	{
-		background-color:#442427;
+		background-color:green;
 		color:white;
+    margin: 10%;
 	}
 
-  p a:active, p a:hover, p a:visited
+  p a:active, p a:hover, p a:visited, h1
   {
     color:white;
   }
-/*	body{margin:0px;}*/
+
+	body
+  {
+    background: linear-gradient(to right, green, #D8D8D8, #D8D8D8, #C8C8C8, green);
+  }
+
+  .ui-tabs-nav
+  {
+    background-color:blue;
+  }
+
 	.container
 	{
+    border-radius: 5px;
 		width:80%;
 		text-align: center;
 		margin:auto;
+    border-color: black;
 	}
 
-  ul
+  li
   {
-    style: inline;
+    display: inline;
+    padding-right: 10px;
   }
+
 </style>
 
 <div class="container">
-	<h1>Joe Noonan</h1>
+	<h1>Joseph Noonan</h1>
 	<div>
 
 	</div>
@@ -55,17 +70,25 @@
     <li><a href="#tabs-3">Resume</a></li>
   </ul>
   <div id="tabs-1">
-    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed macidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+    <p>
+I am an independent, hard working, and a self motivated recent graduate of Eastern Illinois University with a Bachelors degree in Math / Computer Science.
+
+I my most recent education was at Dev Bootcamp in Chicago. It involved an intensive Ruby on Rails teaching full stack, agile web development.
+
+I am always interested in attending any cool programming meetups in Chicago involving any language or platform.
+
+I am keeping my ears open for employment opportunities while simultaneously continuing to expand my programming knowledge base independently online.
+    </p>
   </div>
   <div id="tabs-2">
     <p>
       <%= link_to "Joe Noonan Github", "http://www.github.com/joe11000"%>
-      <%= link_to "Download Resume", "/download_resume" %>
+      <br><br>
+
     </p>
   </div>
   <div id="tabs-3">
-    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-
+    <p><%= link_to "Download Resume", "/download_resume" %></p>
   </div>
 </div>
 
@@ -75,10 +98,11 @@
 
 
 <ul>
-	<li > <%= image_tag "facebook.png"         %></li>
-	<li ><%= image_tag "google.png" %>   </li>
-	<li ><%= image_tag "twitter.png" %>   </li>
-	<li ><%= image_tag "email.png" %> </li>
+	<li><a href="http://www.linkedin.com/pub/joe-noonan/57/a93/a98/"><%= image_tag("linkedin1.png", size: "30x30") %> </a></li>
+  <li ><a href="http://www.facebook.com/joe.noonan2"> <%= image_tag( "facebook1.png", size: "30x30") %> </a></li>
+
+	<li ><a href="http://www.twitter.com/LiveItUp227"> <%=image_tag("twitter1.png", size: "30x30") %></a></li>
+
 </ul>
 
 </div>
