@@ -1,0 +1,31 @@
+p, pre
+{
+	background-color:green;
+	color:white;
+  margin: 10%;
+}
+
+p a:active, p a:hover, p a:visited, h1
+{
+ /* color:black;*/
+}
+
+body
+{
+  background: linear-gradient(to right, green, #D8D8D8, #D8D8D8, #C8C8C8, green);
+}
+
+.container
+{
+  border-radius: 5px;
+	width:80%;
+	text-align: center;
+	margin:auto;
+  border-color: black;
+}
+
+li
+{
+  display: inline;
+  padding-right: 10px;
+}
