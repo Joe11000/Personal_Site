@@ -2,20 +2,13 @@
   <head>
 
   <%= stylesheet_link_tag "home"%>
-  <%= %>
+
 
   <link rel="stylesheet" href="/resources/demos/style.css" />
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-  <script>
-  $(function() {
-    $( "#tabs" ).tabs({
-      event: "mouseover"
-    });
-  });
-  </script>
 
   <meta charset="utf-8" />
   <title>Joe Noonan 101</title>
@@ -24,54 +17,60 @@
   <body>
     <div class="container">
       <h1>Joseph Noonan</h1>
+      <h3> - Web Developer - </h3>
 
-      <%= image_tag @url, size: "180x180" %>
+      <%= image_tag @url %>
 
-      <p> Do better tabular below</p>
-
-
-      <div id="tabs">
-        <ul>
-          <li><a href="#tabs-1">About Me</a></li>
-          <li><a href="#tabs-2">Projects</a></li>
-          <li><a href="#tabs-3">Resume</a></li>
+      <div id="body">
+        <ul class="tabs">
+          <li class="active"><a href="#tab1">About Me</a></li>
+          <li><a href="#tab2">Projects</a></li>
+          <li><a href="#tab3">Resume</a></li>
         </ul>
-        <div id="tabs-1">
-          <p>
-            I am an independent, hard working, and a self motivated recent graduate of Eastern Illinois University with a Bachelors degree in Math / Computer Science.
-          </p>
 
-          <p>
-            I my most recent education was at Dev Bootcamp in Chicago. It involved an intensive Ruby on Rails teaching full stack, agile web development.
-          </p>
-          <p>
-            I am always interested in attending any cool programming meetups in Chicago involving any language or platform.
-          </p>
-          <p>
-            I am keeping my ears open for employment opportunities while simultaneously continuing to expand my programming knowledge base independently online.
-          </p>
-        </div>
-        <div id="tabs-2">
-          <p>
-            <%= link_to "Park Bench Projects", "http://www.parkbenchprojects.com"%>
-            <br><br>
+        <div class="tab" id="tab1">
+            <h2>About Me</h2>
+              <p>
+                I am an independent, hard working, and a self motivated recent graduate of Eastern Illinois University with a Bachelors degree in Math / Computer Science.
+              </p>
 
-          </p>
+              <p>
+                I my most recent education was at Dev Bootcamp in Chicago. It involved an intensive Ruby on Rails teaching full stack, agile web development.
+              </p>
+              <p>
+                I am always interested in attending any cool programming meetups in Chicago involving any language or platform.
+              </p>
+              <p>
+                I am keeping my ears open for employment opportunities while simultaneously continuing to expand my programming knowledge base independently online.
+              </p>
         </div>
-        <div id="tabs-3">
-          <p><%= link_to "Download Resume", "/download_resume" %></p>
+
+        <div class="tab" id="tab2">
+            <h2>Current Projects</h2>
+            <p><%= link_to "Park Bench Projects", "http://www.parkbenchprojects.com"%></p>
+        </div>
+
+        <div class="tab" id="tab3">
+            <h2>Resume</h2>
+           <p><%= link_to "Download Resume", "/download_resume" %></p>
         </div>
       </div>
-
-        <ul>
-        	<li><a href="http://www.linkedin.com/pub/joe-noonan/57/a93/a98/"><%= image_tag("linkedin1.png", size: "30x30") %> </a></li>
+    <h2>Follow Me</h2>
+    <div id="social_media_div">
+        <ul id="">
+          <li><a href="http://www.linkedin.com/pub/joe-noonan/57/a93/a98/"><%= image_tag("linkedin1.png", size: "30x30") %> </a></li>
 
           <li ><a href="http://www.github.com/joe11000"> <%= image_tag("github.png", size: "30x30") %> </a></li>
 
-        	<li ><a href="http://www.twitter.com/LiveItUp227"> <%= image_tag("twitter1.png", size: "30x30") %></a></li>
+          <li ><a href="http://www.twitter.com/LiveItUp227"> <%= image_tag("twitter1.png", size: "30x30") %></a></li>
         </ul>
-
-      </div>
     </div>
+  </div>
+
+
+
+
+
+      <%= javascript_include_tag "home" %>
   </body>
 </html>
