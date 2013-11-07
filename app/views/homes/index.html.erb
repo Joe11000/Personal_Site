@@ -19,7 +19,9 @@
       <h1>Joseph Noonan</h1>
       <h3> - Web Developer - </h3>
 
-      <%= image_tag @url %>
+      <%= image_tag @url , id: "my_pic"%>
+      <br>
+      <br>
 
       <div id="body">
         <ul class="tabs">
@@ -27,6 +29,7 @@
           <li><a href="#tab2">Projects</a></li>
           <li><a href="#tab3">Resume</a></li>
         </ul>
+        <hr>
 
         <div class="tab" id="tab1">
             <h2>About Me</h2>
@@ -52,25 +55,24 @@
 
         <div class="tab" id="tab3">
             <h2>Resume</h2>
+
+            <div ><%= image_tag "WebDeveloperResume.pdf"%></div>
            <p><%= link_to "Download Resume", "/download_resume" %></p>
         </div>
       </div>
-    <h2>Follow Me</h2>
-    <div id="social_media_div">
-        <ul id="">
-          <li><a href="http://www.linkedin.com/pub/joe-noonan/57/a93/a98/"><%= image_tag("linkedin1.png", size: "30x30") %> </a></li>
 
-          <li ><a href="http://www.github.com/joe11000"> <%= image_tag("github.png", size: "30x30") %> </a></li>
+      <h2>Follow Me</h2>
+      <div id="social_media_div">
+          <ul id="">
+            <li><a href="http://www.linkedin.com/pub/joe-noonan/57/a93/a98/"><%= image_tag("linkedin1.png", size: "30x30") %> </a></li>
 
-          <li ><a href="http://www.twitter.com/LiveItUp227"> <%= image_tag("twitter1.png", size: "30x30") %></a></li>
-        </ul>
+            <li ><a href="http://www.github.com/joe11000"> <%= image_tag("github.png", size: "30x30") %> </a></li>
+
+            <li ><a href="http://www.twitter.com/LiveItUp227"> <%= image_tag("twitter1.png", size: "30x30") %></a></li>
+          </ul>
+      </div>
     </div>
-  </div>
 
-
-
-
-
-      <%= javascript_include_tag "home" %>
+    <%= javascript_include_tag "home" %>
   </body>
 </html>

@@ -3,7 +3,7 @@ $(function () {
   $('.active').show();
 
 
-  $('li').on('mouseover', function(event){
+  $('li').on('click', function(event){
       event.preventDefault();
 
       // switch active class to li just clicked
