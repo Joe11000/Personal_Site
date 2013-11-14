@@ -17,9 +17,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
+group :production do
+	gem 'rails_12factor'
+	# gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
+	# gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -31,6 +33,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'pg'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
