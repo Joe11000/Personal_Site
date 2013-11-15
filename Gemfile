@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 group :production do
 	# gem 'rails_12factor'
-	gem 'thin'
+	# gem 'thin'
 end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
