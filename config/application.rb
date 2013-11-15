@@ -25,6 +25,6 @@ module PersonalSite
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     # config.assets.precompile += ['*.css']
-    config.assets.precompile += ['*.js']
+    # config.assets.precompile += ['*.js']
   end
 end
