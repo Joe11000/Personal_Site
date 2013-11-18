@@ -4,7 +4,7 @@
   <%= stylesheet_link_tag "home"%>
 
 
-  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css" /> -->
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -19,16 +19,18 @@
       <h1>Joseph Noonan</h1>
       <h3> - Web Developer - </h3>
 
-      <%= image_tag @url , id: "my_pic"%>
+      <%= image_tag @url , id: "my_pic", size: "250x250"%>
       <br>
       <br>
 
       <div id="main_content">
-        <ul class="tabs">
-          <li class="active"><a href="#tab1">About Me</a></li>
-          <li><a href="#tab2">Projects</a></li>
-          <li><a href="#tab3">Resume</a></li>
-        </ul>
+        <div>
+          <ul class="tabs">
+            <li class="active"><a href="#tab1">About Me</a></li>
+            <li><a href="#tab2">Projects</a></li>
+            <li><a href="#tab3">Resume</a></li>
+          </ul>
+        </div>
         <hr>
 
         <div class="tab" id="tab1">
@@ -48,7 +50,7 @@
         </div>
 
         <div class="tab" id="tab2">
-            <h2>Current Projects</h2>
+            <h2>Recent Projects</h2>
             <p><%= link_to "Park Bench Projects", "http://www.parkbenchprojects.com"%></p>
 
             <p><%= link_to "Unbeatable Tic Tac Toe", "http://www.samplez18.com.s3-website-us-east-1.amazonaws.com"%></p>

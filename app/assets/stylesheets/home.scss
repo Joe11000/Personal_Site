@@ -29,10 +29,9 @@ ul
 .tabs
 {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   list-style: none;
-  height: 30px;
-  line-height: 15px;
+  position:relative;
 
   li
   {
@@ -45,6 +44,7 @@ ul
     padding: 9px 14px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    line-height: 30px;
 
     a
     {
@@ -56,7 +56,6 @@ ul
 
   li.active
   {
-    // border-bottom: 0px solid white;
     box-shadow: 0px 0px 32px 2px black inset;
 
     a
