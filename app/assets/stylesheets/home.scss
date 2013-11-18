@@ -1,6 +1,19 @@
 body
 {
   background: linear-gradient(to right, green, #D8D8D8, #D8D8D8, #C8C8C8, green);
+
+
+    background: -moz-linear-gradient(black, transparent); /* FF 3.6+ */
+    background: -ms-linear-gradient(black, transparent); /* IE10 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */
+    background: -webkit-linear-gradient(black, transparent); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(black, transparent); /* Opera 11.10 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */
+    background: linear-gradient(black, transparent); /* the standard */
+    z-index: 1;
+
+
 }
 .container
 {

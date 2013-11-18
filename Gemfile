@@ -38,8 +38,6 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-
-
 ## I ADDED THESE BELOW
 	group :development, :test do
 	  gem 'rspec-rails'
@@ -47,7 +45,6 @@ end
 	  gem 'shoulda-matchers'
 	  gem 'binding_of_caller'
   	gem 'guard-rspec'
-	  gem 'faker'
 	end
 
 	group :development do
@@ -66,4 +63,4 @@ group :production do
 end
 
 gem 'jquery-ui-rails'
-gem 'gravatar-ultimate'
+# gem 'gravatar-ultimate'
