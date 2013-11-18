@@ -33,8 +33,7 @@ ul {
     margin-left: 0;
     padding: 9px 14px;
     border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    line-height: 30px; }
+    border-top-right-radius: 4px; }
     .tabs li a {
       color: #666;
       font-family: Helvetica, Arial, sans-serif;
