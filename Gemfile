@@ -6,8 +6,6 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
-gem 'gravatar-ultimate'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -17,13 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-group :production do
-	gem 'rails_12factor'
-	gem 'thin'
-end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -45,6 +38,9 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
+
+
+## I ADDED THESE BELOW
 	group :development, :test do
 	  gem 'rspec-rails'
 	  gem 'factory_girl_rails'
@@ -64,3 +60,10 @@ end
   	gem 'launchy'
 	end
 
+group :production do
+	gem 'rails_12factor'
+	gem 'thin'
+end
+
+gem 'jquery-ui-rails'
+gem 'gravatar-ultimate'

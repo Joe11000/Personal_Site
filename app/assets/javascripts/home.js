@@ -1,4 +1,5 @@
 $(function () {
+  $('[id*=tab]').hide();
   $('#tab1').addClass('active');
   $('.active').show();
 
