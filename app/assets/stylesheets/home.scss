@@ -26,20 +26,13 @@ ul
   padding:0px;
 }
 
-
 .tabs
 {
-
-  /*float: left;*/
   width: 100%;
   margin-bottom: 16px;
   list-style: none;
-  padding-left:25%;
-  float: left;
-  margin-right: 16px;
-  padding: 10px 15px;
   height: 30px;
-  line-height: 30px;
+  line-height: 15px;
 
   li
   {
@@ -47,34 +40,31 @@ ul
     width: 8px;
     color: #f00;
     width:75px;
-    margin-right: 0px;
-    margin-right: auto;
-  }
-  li a
-  {
-      color: #666;
-      font-family: Helvetica, Arial, sans-serif;
-      text-decoration: none;
+    display: inline-block;
+    margin-left: 0;
+    padding: 9px 14px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    a
+    {
+        color: #666;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none;
+    }
   }
 
   li.active
   {
-      border: 1px solid #ccc;
-      border-bottom: 0px solid white;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      margin-bottom: -1px;
-      // height: 31px;
-      padding: 9px 14px;
+    // border-bottom: 0px solid white;
+    box-shadow: 0px 0px 32px 2px black inset;
 
-      box-shadow: 0px 0px 32px 2px  black inset;
-  }
-
-  li.active a
-  {
-      color: black;
-      text-decoration: none;
-      border-bottom: none;
+    a
+    {
+        color: black;
+        text-decoration: none;
+        border-bottom: none;
+    }
   }
 
   .tab
@@ -83,8 +73,6 @@ ul
       margin:auto;
   }
 }
-
-
 
 .container
 {
@@ -106,14 +94,11 @@ h1, h2, h3
   font-weight: bold;
 }
 
-
-
 #social_media_div li
 {
   display:inline;
   padding-right: 10px;
 }
-
 
 #main_content
 {
@@ -127,11 +112,3 @@ h1, h2, h3
   border-top-right-radius: 5px;
   box-shadow: 10px 10px 5px black;
 }
-
-hr
-{
-  background-color:red;
-
-}
-
-

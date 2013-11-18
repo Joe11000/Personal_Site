@@ -20,39 +20,31 @@ ul {
   padding: 0px; }
 
 .tabs {
-  /*float: left;*/
   width: 100%;
   margin-bottom: 16px;
   list-style: none;
-  padding-left: 25%;
-  float: left;
-  margin-right: 16px;
-  padding: 10px 15px;
   height: 30px;
-  line-height: 30px; }
+  line-height: 15px; }
   .tabs li {
     border: 3px outset green;
     width: 8px;
     color: #f00;
     width: 75px;
-    margin-right: 0px;
-    margin-right: auto; }
-  .tabs li a {
-    color: #666;
-    font-family: Helvetica, Arial, sans-serif;
-    text-decoration: none; }
-  .tabs li.active {
-    border: 1px solid #ccc;
-    border-bottom: 0px solid white;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    margin-bottom: -1px;
+    display: inline-block;
+    margin-left: 0;
     padding: 9px 14px;
-    box-shadow: 0px 0px 32px 2px  black inset; }
-  .tabs li.active a {
-    color: black;
-    text-decoration: none;
-    border-bottom: none; }
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+    .tabs li a {
+      color: #666;
+      font-family: Helvetica, Arial, sans-serif;
+      text-decoration: none; }
+  .tabs li.active {
+    box-shadow: 0px 0px 32px 2px black inset; }
+    .tabs li.active a {
+      color: black;
+      text-decoration: none;
+      border-bottom: none; }
   .tabs .tab {
     display: none;
     margin: auto; }
@@ -83,6 +75,3 @@ h1, h2, h3 {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 10px 10px 5px black; }
-
-hr {
-  background-color: red; }
