@@ -2,27 +2,25 @@ body
 {
   background: linear-gradient(to right, green, #D8D8D8, #D8D8D8, #C8C8C8, green);
 
-
-  background: -moz-linear-gradient(black, transparent); /* FF 3.6+ */
-  background: -ms-linear-gradient(black, transparent); /* IE10 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */
-  background: -webkit-linear-gradient(black, transparent); /* Safari 5.1+, Chrome 10+ */
-  background: -o-linear-gradient(black, transparent); /* Opera 11.10 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */
-  background: linear-gradient(black, transparent); /* the standard */
-  z-index: 1;
-
-
+  // background: -moz-linear-gradient(black, transparent); /* FF 3.6+ */
+  // background: -ms-linear-gradient(black, transparent); /* IE10 */
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #ffffff)); /* Safari 4+, Chrome 2+ */
+  // background: -webkit-linear-gradient(black, transparent); /* Safari 5.1+, Chrome 10+ */
+  // background: -o-linear-gradient(black, transparent); /* Opera 11.10 */
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent); /* IE6 & IE7 */
+  // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr=transparent)"; /* IE8+ */
+  // background: linear-gradient(black, transparent); /* the standard */
+  // z-index: 1;
 }
+
 .container
 {
   border-radius: 5px;
   width:80%;
   text-align: center;
-  margin:auto;
+  margin: 20px auto;
   border-color: black;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 #my_pic
@@ -59,7 +57,6 @@ ul
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 
-
     a
     {
         color: #666;
@@ -85,12 +82,6 @@ ul
       display: none;
       margin:auto;
   }
-}
-
-.container
-{
-    margin: 20px auto;
-    width: 80%;
 }
 
 p
@@ -124,4 +115,5 @@ h1, h2, h3
   border-top-left-radius:  5px;
   border-top-right-radius: 5px;
   box-shadow: 10px 10px 5px black;
+  max-width: 800px;
 }
