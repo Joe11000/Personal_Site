@@ -39,11 +39,11 @@ end
 	  gem 'shoulda-matchers'
 	  gem 'binding_of_caller'
   	gem 'guard-rspec'
+  	gem 'debugger'
 	end
 
 	group :development do
 	  gem 'better_errors'
-  	gem 'debugger'
 	end
 
 	group :test do
