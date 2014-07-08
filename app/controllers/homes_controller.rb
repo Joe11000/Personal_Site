@@ -5,6 +5,6 @@ class HomesController < ActionController::Base
 	end
 
 	def download_resume
-   send_file "app/assets/pdfs/Joe_Noonan_Resume.pdf"
+      send_file "app/assets/pdfs/Joe_Noonan_Resume.pdf"
 	end
 end
