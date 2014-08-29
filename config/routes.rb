@@ -1,5 +1,5 @@
 PersonalSite::Application.routes.draw do
-  get '/',                 					to: 'homes#index'
-  get '/download_resume',  					to: "homes#download_resume"
-  root 'homes#index'
+  get '/',                 to: 'home#index'
+  get '/download_resume',  to: "home#download_resume"
+  root 'home#index'
 end
