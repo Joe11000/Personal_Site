@@ -10,10 +10,6 @@
  *
  *= require_self
  *= require_tree .
+ *= require ./home
  */
 
-
-.container
-{
-	width:80%;
-}

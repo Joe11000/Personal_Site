@@ -1,11 +1,32 @@
 <html>
   <head>
 
-  <%= stylesheet_link_tag "home"%>
+   <%= stylesheet_link_tag "home"%>
 
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+
+<style type="text/css">
+#site_upgrade{
+  background-color: rgba(255,102, 0, .5);
+  border:  5px black dashed;
+  outline: 5px red ridge;
+  padding: 0px 10px 10px 10px;
+}
+
+  #site_upgrade a:link,
+  #site_upgrade a:visited,
+  #site_upgrade a:hover,
+  #site_upgrade a:active  {
+                            text-decoration: none;
+                            color:blue;
+                            font-weight: bold;
+                            font-size: 18px;
+                          }
+
+</style>
 
   <meta charset="utf-8" />
   <title>Joe Noonan 101</title>
@@ -13,6 +34,22 @@
   </head>
   <body>
     <div class="container">
+      <div id="site_upgrade">
+        <h3 style="font-weight: bold; "> - Progress of upgraded web site - </h1>
+
+        <div class="percentage_complete" style="font-weight: bold;"></div>
+        <div id="progressbar"></div>
+        <br>
+
+        <%= link_to "visit site anyway", "http://joe-noonan-102.herokuapp.com", style: "display: inline; padding-right: 15px;" %>
+
+        <%= link_to "view code", "http://www.github.com/Joe11000/Personal_Site_2.0" %>
+
+      </div>
+
+
+
+
       <h1>Joseph Noonan</h1>
       <h3> - Web Developer - </h3>
 

@@ -1,3 +1,5 @@
+
+
 var image_slide_show = [
                          "http://i884.photobucket.com/albums/ac41/jgnoonan27/1_zpse7b88fbb.jpg",
                          "http://i884.photobucket.com/albums/ac41/jgnoonan27/2_zps4ee3cb13.jpg",
@@ -52,4 +54,19 @@ $(function () {
 
   }, 14000);
   });
+
+
+
+var progressbar_val = 15;
+
+
+    $( "#progressbar" ).progressbar({
+      value: progressbar_val
+    });
+
+
+    $( ".percentage_complete" ).html(progressbar_val + "%")
+
+
+
 });
